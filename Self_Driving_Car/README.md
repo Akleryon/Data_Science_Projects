@@ -13,9 +13,7 @@
 
 - **Python version :** 2
 - **Packages :** numpy, torch, Kivy, random, matplotlib, os
-- **Run :** - python3 -m venv venv
-            - source venv/bin/activate
-            - pip3 install -r requirements.txt
+- **Run :** --- python3 -m venv venv --- source venv/bin/activate --- pip3 install -r requirements.txt ---
 - **Kivy Tutorial:** https://www.youtube.com/playlist?list=PLhTjy8cBISEpobkPwLm71p5YNBzPH9m9V
 
 ## Image
