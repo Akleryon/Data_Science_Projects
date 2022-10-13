@@ -1,5 +1,3 @@
-# Self Driving Car
-
 # Importing the libraries
 import numpy as np
 from random import random, randint
@@ -28,7 +26,7 @@ last_y = 0
 n_points = 0
 length = 0
 
-# Getting our AI, which we call "brain", and that contains our neural network that represents our Q-function
+# Getting the AI, which we call "brain", and that contains the neural network that represents the Q-function
 brain = Dqn(5,3,0.9)
 action2rotation = [0,20,-20]
 last_reward = 0
