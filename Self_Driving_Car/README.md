@@ -1,7 +1,7 @@
 # DataScience Project: Self_Driving_Car using Deep Q-Learning
 ## Overview
 
-- Create a bot able to learn how to move between 2 points (top left corner and bottom right corner) in the most efficient way.
+- Create a bot able to learn how to move between 2 points (top left corner and bottom right corner) in the most efficient way using 3 censors.
 
 - Use Kivy for the environment (map + car).
 
