@@ -1,6 +1,6 @@
 import cv2
 import mediapipe as mp
-
+import numpy as np
 
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
@@ -44,6 +44,12 @@ with mp_hands.Hands(
             circle_radius=2
           )
         )
+    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    mask = cv2.inRange(hsv, (36, 25, 25), (70, 255,255))
+    imask = mask>0
+    image_to_process = np.zeros_like(image, np.uint8)
+    image_to_process[imask] = image[imask]
+    
     # Flip the image horizontally for a selfie-view display.
     cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == 27:
