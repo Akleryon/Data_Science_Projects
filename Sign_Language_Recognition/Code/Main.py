@@ -49,7 +49,6 @@ with mp_hands.Hands(
     imask = mask>0
     image_to_process = np.zeros_like(image, np.uint8)
     image_to_process[imask] = image[imask]
-    
     # Flip the image horizontally for a selfie-view display.
     cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == 27:
