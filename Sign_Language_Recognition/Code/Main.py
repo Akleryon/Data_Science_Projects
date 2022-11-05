@@ -35,6 +35,7 @@ with mp_hands.Hands(
             mp_hands.HAND_CONNECTIONS,
             mp_drawing_styles.get_default_hand_landmarks_style(),
             mp_drawing_styles.get_default_hand_connections_style())
+        
     # Flip the image horizontally for a selfie-view display.
     cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == 27:
